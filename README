@@ -1,0 +1,84 @@
+libsidplay
+------------------------------------------
+SIDPLAY emulates the Sound Interface Device chip (MOS 6581, commonly
+called SID) and the Micro Processor Unit (MOS 6510) of the Commodore 64
+on your computer. It is a platform independent software which emulates
+these hardware components. Therefore it is able to load and execute C64
+machine code programs which produce music or sound.
+
+Runtime requirements:
+  cygwin-1.5.22-1
+
+Build requirements:
+(besides corresponding -devel packages)
+  cygwin-1.5.22-1
+  autoconf2.5-2.60-1
+  automake1.9-1.9.6-1
+  binutils-20060817-1
+  cygport-0.2.7-1
+  gawk-3.1.5-2
+  gcc-core-3.4.4-1
+  gcc-g++-3.4.4-1
+  libtool1.5-1.5.23a-1
+  make-3.81-1
+  sed-4.1.5-2
+
+Canonical website:
+  http://www.geocities.com/SiliconValley/Lakes/5147/sidplay/
+
+Canonical download:
+  http://www.geocities.com/SiliconValley/Lakes/5147/sidplay/linux.html
+
+-------------------------------------------
+
+Build instructions:
+  unpack libsidplay-1.36.59-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./libsidplay-1.36.59-X.cygport all
+
+This will create:
+  /usr/src/libsidplay-1.36.59-X-src.tar.bz2
+  /usr/src/libsidplay-1.36.59-X.tar.bz2
+  /usr/src/libsidplay-devel-1.36.59-X.tar.bz2
+  /usr/src/libsidplay1-1.36.59-X.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary packages:
+
+(libsidplay)
+  /usr/share/doc/Cygwin/libsidplay-1.36.59.README
+  /usr/share/doc/libsidplay-1.36.59/AUTHORS
+  /usr/share/doc/libsidplay-1.36.59/COPYING
+  /usr/share/doc/libsidplay-1.36.59/INSTALL
+
+(libsidplay1)
+  /usr/bin/cygsidplay-1.dll
+
+(libsidplay-devel)
+  /usr/include/sidplay/compconf.h
+  /usr/include/sidplay/emucfg.h
+  /usr/include/sidplay/fformat.h
+  /usr/include/sidplay/fixpoint.h
+  /usr/include/sidplay/libcfg.h
+  /usr/include/sidplay/myendian.h
+  /usr/include/sidplay/mytypes.h
+  /usr/include/sidplay/player.h
+  /usr/include/sidplay/sidtune.h
+  /usr/include/sidplay/version.h
+  /usr/lib/libsidplay.a
+  /usr/lib/libsidplay.dll.a
+  /usr/lib/libsidplay.la
+
+------------------
+
+Port Notes:
+
+----- version 1.36.59-1 -----
+Initial release for Cygwin.
+
+
+Cygwin port maintained by:
+http://cygwinports.dotsrc.org/
