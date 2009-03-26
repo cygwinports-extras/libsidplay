@@ -1,5 +1,5 @@
-category: Audio Libs
-requires: cygwin
+category: Audio
+requires: cygwin libgcc1 libstdc++6
 external-source: libsidplay
 sdesc: "C64 Sound Interface Device emulator (runtime)"
 ldesc: "SIDPLAY emulates the Sound Interface Device chip (MOS 6581,

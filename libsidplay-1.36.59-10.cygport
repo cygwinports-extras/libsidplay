@@ -1,0 +1,10 @@
+DESCRIPTION="C64 Sound Interface Device emulator"
+HOMEPAGE="http://www.geocities.com/SiliconValley/Lakes/5147/sidplay/"
+SRC_URI="http://critical.ch/distfiles/${P}.tgz"
+PATCH_URI="mirror://portage/media-libs/${PN}/files/${P}-gcc43.patch
+           1.36.59-no-undefined.patch"
+
+PKG_NAMES="${PN} ${PN}1 ${PN}-devel"
+PKG_HINTS="setup lib devel"
+libsidplay1_CONTENTS='usr/bin/cygsidplay-1.dll usr/share/doc/'
+libsidplay_devel_CONTENTS='usr/include/ usr/lib/'
