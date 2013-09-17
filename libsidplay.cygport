@@ -1,0 +1,18 @@
+NAME="libsidplay"
+VERSION=1.36.59
+RELEASE=10
+CATEGORY="Libs"
+SUMMARY="C64 Sound Interface Device emulator"
+DESCRIPTION="SIDPLAY emulates the Sound Interface Device chip (MOS 6581,
+commonly called SID) and the Micro Processor Unit (MOS 6510) of the
+Commodore 64 on your computer. It is a platform independent software
+which emulates these hardware components. Therefore it is able to load
+and execute C64 machine code programs which produce music or sound."
+HOMEPAGE="http://www.geocities.com/SiliconValley/Lakes/5147/sidplay/"
+SRC_URI="http://critical.ch/distfiles/libsidplay-${VERSION}.tgz"
+PATCH_URI="mirror://portage/media-libs/libsidplay/files/libsidplay-1.36.59-gcc43.patch
+           1.36.59-no-undefined.patch"
+
+PKG_NAMES="${NAME}1 ${NAME}-devel"
+libsidplay1_CONTENTS='usr/bin/cygsidplay-1.dll usr/share/doc/'
+libsidplay_devel_CONTENTS='usr/include/ usr/lib/'
